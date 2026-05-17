@@ -6,8 +6,8 @@
 
   <!-- SEO Básico -->
   <title>Thaci Nail Designer | Cutilagem Russa e Nail Design em Fazenda Rio Grande</title>
-  <meta name="description" content="Thaci Nail Designer em Fazenda Rio Grande, Paraná. Cutilagem russa, nail design, alongamentos e esmaltação com acabamento delicado, elegante e profissional." />
-  <meta name="keywords" content="Thaci Nail Designer, nail designer Fazenda Rio Grande, cutilagem russa, unhas decoradas, alongamento de unhas, esmaltação, manicure Fazenda Rio Grande, nail art" />
+  <meta name="description" content="Thaci Nail Designer em Fazenda Rio Grande, Paraná. Cutilagem russa, alongamento no molde F1, blindagem e esmaltação em gel com acabamento delicado e profissional." />
+  <meta name="keywords" content="Thaci Nail Designer, nail designer Fazenda Rio Grande, cutilagem russa, alongamento molde F1, blindagem de unhas, esmaltação em gel, unhas decoradas, manicure Fazenda Rio Grande, nail art" />
   <meta name="author" content="Thaci Nail Designer" />
   <meta name="robots" content="index, follow" />
   <meta name="language" content="pt-BR" />
@@ -324,22 +324,21 @@
     }
 
     .gallery{
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      grid-auto-rows: 260px;
-      gap: 25px;
+      display:grid;
+      grid-template-columns:repeat(3, 1fr);
+      grid-template-rows:repeat(2, 400px);
+      gap:25px;
     }
 
     .gallery-item:nth-child(1),
-    .gallery-item:nth-child(2) {
-      grid-column: span 3;
-      grid-row: span 2;
+    .gallery-item:nth-child(2){
+      grid-column:span 1;
     }
 
     .gallery-item:nth-child(3),
     .gallery-item:nth-child(4),
-    .gallery-item:nth-child(5) {
-      grid-column: span 2;
+    .gallery-item:nth-child(5){
+      grid-column:span 1;
     }
 
     .gallery-item{
@@ -627,17 +626,16 @@
       }
 
       .gallery{
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: 340px;
+        grid-template-columns:repeat(2, 1fr);
+        grid-template-rows:auto;
       }
 
       .gallery-item:nth-child(1),
       .gallery-item:nth-child(2),
       .gallery-item:nth-child(3),
       .gallery-item:nth-child(4),
-      .gallery-item:nth-child(5) {
-        grid-column: span 1;
-        grid-row: span 1;
+      .gallery-item:nth-child(5){
+        grid-column:span 1;
       }
     }
 
@@ -680,8 +678,12 @@
       }
 
       .gallery{
-        grid-template-columns: 1fr;
-        grid-auto-rows: 360px;
+        grid-template-columns:1fr;
+        grid-template-rows:auto;
+      }
+
+      .gallery-item{
+        height:340px;
       }
 
       .price{
@@ -728,8 +730,9 @@
   <nav class="navbar" aria-label="Menu principal">
     <a href="#inicio" class="nav-logo">Thaci Nail</a>
     <ul class="nav-links">
+      <li><a href="#servicos">Serviços</a></li>
       <li><a href="#trabalhos">Trabalhos</a></li>
-      <li><a href="#servico">Serviço</a></li>
+      <li><a href="#servico">Preço</a></li>
       <li><a href="#sobre">Sobre</a></li>
       <li><a href="#contato">Contato</a></li>
     </ul>
@@ -749,9 +752,7 @@
       </p>
 
       <p>
-        Especialista em cutilagem russa e nail design. Trabalho com dedicação em cada detalhe
-        para oferecer unhas impecáveis, resistentes e com acabamento profissional, sempre buscando
-        entregar uma experiência confortável, bonita e marcante para cada cliente.
+        Especialista em cutilagem russa, alongamento no molde F1, blindagem e esmaltação em gel. Trabalho com dedicação em cada detalhe para oferecer unhas impecáveis, resistentes e com acabamento profissional, sempre buscando entregar uma experiência confortável, bonita e marcante para cada cliente.
       </p>
 
       <div class="hero-buttons">
@@ -772,14 +773,14 @@
   <section aria-labelledby="diferenciais-title">
     <h2 class="section-title" id="diferenciais-title">Por que escolher a Thaci?</h2>
     <p class="section-description">
-      Atendimento cuidadoso, acabamento profissional e um resultado pensado para valorizar a beleza das suas mãos.
+      Atendimento cuidadoso, técnicas modernas e acabamento profissional para valorizar a beleza das suas mãos.
     </p>
 
     <div class="features">
       <article class="feature-card">
-        <i class="fa-solid fa-sparkles"></i>
-        <h3>Acabamento delicado</h3>
-        <p>Detalhes bem feitos para deixar as unhas elegantes, bonitas e com aparência profissional.</p>
+        <i class="fa-solid fa-wand-magic-sparkles"></i>
+        <h3>Cutilagem com Brocas</h3>
+        <p>A cutilagem é feita exclusivamente com brocas, trazendo mais biosegurança, conforto e precisão durante o procedimento. A técnica ajuda a evitar cortes, reduz desconfortos e proporciona um acabamento mais delicado e profissional.</p>
       </article>
 
       <article class="feature-card">
@@ -791,7 +792,40 @@
       <article class="feature-card">
         <i class="fa-solid fa-heart"></i>
         <h3>Design personalizado</h3>
-        <p>Estilos delicados, modernos e adaptados ao gosto de cada cliente.</p>
+        <p>Modelos delicados, modernos e adaptados ao estilo de cada cliente.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="servicos" aria-labelledby="servicos-title">
+    <h2 class="section-title" id="servicos-title">Técnicas e Serviços</h2>
+    <p class="section-description">
+      Conheça os principais serviços realizados e entenda como cada técnica ajuda a deixar suas unhas mais bonitas, resistentes e bem cuidadas.
+    </p>
+
+    <div class="features">
+      <article class="feature-card">
+        <i class="fa-solid fa-hand-sparkles"></i>
+        <h3>Cutilagem Russa</h3>
+        <p>É uma técnica de limpeza e acabamento mais preciso na região das cutículas. Ela ajuda a deixar o contorno das unhas mais alinhado, delicado e com aparência mais profissional.</p>
+      </article>
+
+      <article class="feature-card">
+        <i class="fa-solid fa-gem"></i>
+        <h3>Alongamento no Molde F1</h3>
+        <p>O molde F1 ajuda a construir unhas mais longas e bonitas com formato definido. É indicado para quem deseja alongamento com resultado elegante, resistente e natural.</p>
+      </article>
+
+      <article class="feature-card">
+        <i class="fa-solid fa-shield-heart"></i>
+        <h3>Blindagem</h3>
+        <p>A blindagem cria uma camada de proteção sobre a unha natural, ajudando a aumentar a resistência, reduzir quebras e manter o acabamento bonito por mais tempo.</p>
+      </article>
+
+      <article class="feature-card">
+        <i class="fa-solid fa-paintbrush"></i>
+        <h3>Esmaltação em Gel</h3>
+        <p>A esmaltação em gel oferece brilho intenso, secagem em cabine e maior durabilidade. É ideal para quem busca unhas bonitas, alinhadas e com acabamento impecável.</p>
       </article>
     </div>
   </section>
@@ -822,15 +856,15 @@
   </section>
 
   <section id="servico" aria-labelledby="servico-title">
-    <h2 class="section-title" id="servico-title">Serviço</h2>
+    <h2 class="section-title" id="servico-title">Serviço principal</h2>
     <p class="section-description">
-      Um atendimento pensado para quem deseja unhas bonitas, bem cuidadas e com acabamento especial.
+      Valor inicial para atendimento com acabamento profissional. Para modelos mais detalhados, consulte pelo WhatsApp.
     </p>
 
     <div class="price-box">
       <h3>Cutilagem Russa + Nail Design</h3>
 
-      <div class="price">R$ 65</div>
+      <div class="price">R$ 65,00</div>
 
       <p>
         Alongamentos e esmaltações com acabamento sofisticado,
@@ -838,10 +872,11 @@
       </p>
 
       <ul class="service-list">
-        <li><i class="fa-solid fa-check"></i> Cuidado com a preparação das unhas</li>
-        <li><i class="fa-solid fa-check"></i> Acabamento delicado e elegante</li>
-        <li><i class="fa-solid fa-check"></i> Atendimento com horário agendado</li>
-        <li><i class="fa-solid fa-check"></i> Design pensado para o seu estilo</li>
+        <li><i class="fa-solid fa-check"></i> Cutilagem russa com acabamento delicado</li>
+        <li><i class="fa-solid fa-check"></i> Alongamento no molde F1</li>
+        <li><i class="fa-solid fa-check"></i> Blindagem para mais resistência</li>
+        <li><i class="fa-solid fa-check"></i> Esmaltação em gel com brilho e durabilidade</li>
+        <li><i class="fa-solid fa-check"></i> Atendimento somente com horário marcado</li>
       </ul>
 
       <a class="btn" href="https://wa.me/5513996769757?text=Ol%C3%A1%20Thaci%2C%20quero%20saber%20mais%20sobre%20o%20servi%C3%A7o%20de%20cutilagem%20russa%20e%20nail%20design" target="_blank" rel="noopener noreferrer">
@@ -865,14 +900,15 @@
   <section id="contato" aria-labelledby="contato-title">
     <h2 class="section-title" id="contato-title">Entre em Contato</h2>
     <p class="section-description">
-      Preencha o formulário abaixo para enviar uma mensagem rápida pelo WhatsApp ou fale diretamente pelas redes sociais.
+      Fale diretamente com a Thaci para tirar dúvidas, solicitar informações ou agendar seu horário.
     </p>
 
     <div class="contact-wrapper">
-      <div class="contact-info">
-        <h3>Informações</h3>
+      <div class="contact-info" style="max-width:700px; margin:0 auto; grid-column:1/-1;">
+        <h3>Informações principais</h3>
         <p>
-          Quer agendar um horário, tirar dúvidas ou combinar um modelo de unha? Envie uma mensagem e fale comigo.
+          Atendimento realizado somente com horário agendado para garantir conforto,
+          qualidade e atenção especial em cada atendimento.
         </p>
 
         <ul class="contact-list">
@@ -880,93 +916,45 @@
             <i class="fab fa-whatsapp"></i>
             <span>WhatsApp: (13) 99676-9757</span>
           </li>
+
           <li>
             <i class="fab fa-instagram"></i>
             <span>Instagram: @thaci_nail_frg</span>
           </li>
+
           <li>
             <i class="fa-solid fa-location-dot"></i>
             <span>Fazenda Rio Grande, Paraná</span>
           </li>
+
           <li>
-            <i class="fa-solid fa-clock"></i>
-            <span>Atendimento com horário agendado</span>
+            <i class="fa-solid fa-calendar-check"></i>
+            <span>Atendimento somente com horário marcado</span>
           </li>
         </ul>
+
+        <div style="margin-top:30px; display:flex; justify-content:center; flex-wrap:wrap; gap:15px;">
+          <a class="btn" href="https://wa.me/5513996769757?text=Ol%C3%A1%20Thaci%2C%20vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-whatsapp"></i>
+            Chamar no WhatsApp
+          </a>
+
+          <a class="btn btn-outline" href="https://instagram.com/thaci_nail_frg" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-instagram"></i>
+            Abrir Instagram
+          </a>
+        </div>
       </div>
-
-      <form class="contact-form" onsubmit="enviarWhatsApp(event)">
-        <h3>Formulário de contato</h3>
-
-        <div class="form-group">
-          <label for="nome">Seu nome</label>
-          <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
-        </div>
-
-        <div class="form-group">
-          <label for="telefone">Seu WhatsApp</label>
-          <input type="tel" id="telefone" name="telefone" placeholder="Ex: (41) 99999-9999" required>
-        </div>
-
-        <div class="form-group">
-          <label for="servico">Serviço desejado</label>
-          <select id="servico" name="servico" required>
-            <option value="">Selecione uma opção</option>
-            <option value="Cutilagem Russa + Nail Design">Cutilagem Russa + Nail Design</option>
-            <option value="Alongamento de unhas">Alongamento de unhas</option>
-            <option value="Esmaltação">Esmaltação</option>
-            <option value="Tenho dúvidas sobre os serviços">Tenho dúvidas sobre os serviços</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label for="mensagem">Mensagem</label>
-          <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem ou diga qual modelo de unha você deseja..." required></textarea>
-        </div>
-
-        <button type="submit" class="btn">
-          <i class="fab fa-whatsapp"></i>
-          Enviar pelo WhatsApp
-        </button>
-      </form>
     </div>
   </section>
 
-  <section class="instagram-section" aria-labelledby="instagram-title">
-    <h2 class="section-title" id="instagram-title">Acompanhe no meu Instagram</h2>
-    <a href="https://instagram.com/thaci_nail_frg" target="_blank" rel="noopener noreferrer" class="instagram-btn">
-      <i class="fab fa-instagram"></i>
-      Siga @thaci_nail_frg
-    </a>
-  </section>
-
-  <a class="whatsapp-float" href="https://wa.me/5513996769757?text=Ol%C3%A1%20Thaci%2C%20vim%20pelo%20seu%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio" target="_blank" rel="noopener noreferrer" aria-label="Chamar no WhatsApp">
-    <i class="fab fa-whatsapp"></i>
-  </a>
-
   <footer>
-    © 2026 • Thaci Nail Designer ✨ <br><br>
+    © 2026 • developer by: contato.alexazevedo@outlook.com<br><br>
     Cutilagem Russa e Nail Design em Fazenda Rio Grande, Paraná <br>
     Desenvolvido para destacar sua beleza com delicadeza e cuidado.
   </footer>
 
-  <script>
-    function enviarWhatsApp(event) {
-      event.preventDefault();
-
-      const nome = document.getElementById('nome').value.trim();
-      const telefone = document.getElementById('telefone').value.trim();
-      const servico = document.getElementById('servico').value;
-      const mensagem = document.getElementById('mensagem').value.trim();
-
-      const numeroThaci = '5513996769757';
-
-      const texto = `Olá Thaci, tudo bem? Vim pelo seu site e gostaria de falar com você.\n\nNome: ${nome}\nMeu WhatsApp: ${telefone}\nServiço desejado: ${servico}\nMensagem: ${mensagem}`;
-
-      const url = `https://wa.me/${numeroThaci}?text=${encodeURIComponent(texto)}`;
-      window.open(url, '_blank');
-    }
-  </script>
+  
 
 </body>
 </html>
