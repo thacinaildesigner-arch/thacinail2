@@ -286,7 +286,7 @@
 
     .features{
       display:grid;
-      grid-template-columns:repeat(3, 1fr);
+      grid-template-columns:repeat(auto-fit, minmax(230px, 1fr));
       gap:25px;
     }
 
@@ -326,8 +326,8 @@
     .gallery{
       display:grid;
       grid-template-columns:repeat(3, 1fr);
-      grid-template-rows:repeat(2, 400px);
-      gap:25px;
+      grid-template-rows:repeat(2, 330px);
+      gap:22px;
     }
 
     .gallery-item:nth-child(1),
@@ -678,12 +678,14 @@
       }
 
       .gallery{
-        grid-template-columns:1fr;
+        grid-template-columns:repeat(2, 1fr);
         grid-template-rows:auto;
+        gap:14px;
       }
 
       .gallery-item{
-        height:340px;
+        height:220px;
+        border-radius:18px;
       }
 
       .price{
@@ -710,7 +712,12 @@
       }
 
       .gallery{
-        grid-auto-rows:310px;
+        grid-template-columns:1fr;
+        gap:16px;
+      }
+
+      .gallery-item{
+        height:260px;
       }
 
       .whatsapp-float{
@@ -732,8 +739,8 @@
     <ul class="nav-links">
       <li><a href="#servicos">Serviços</a></li>
       <li><a href="#trabalhos">Trabalhos</a></li>
-      <li><a href="#servico">Preço</a></li>
-      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#cuidados">Cuidados</a></li>
+      <li><a href="#duvidas">Dúvidas</a></li>
       <li><a href="#contato">Contato</a></li>
     </ul>
   </nav>
@@ -780,19 +787,13 @@
       <article class="feature-card">
         <i class="fa-solid fa-wand-magic-sparkles"></i>
         <h3>Cutilagem com Brocas</h3>
-        <p>A cutilagem é feita exclusivamente com brocas, trazendo mais biosegurança, conforto e precisão durante o procedimento. A técnica ajuda a evitar cortes, reduz desconfortos e proporciona um acabamento mais delicado e profissional.</p>
-      </article>
-
-      <article class="feature-card">
-        <i class="fa-solid fa-hand-sparkles"></i>
-        <h3>Cuidado em cada etapa</h3>
-        <p>Atendimento com atenção, carinho e foco no conforto da cliente durante todo o processo.</p>
+        <p>A cutilagem é feita exclusivamente com brocas, trazendo biossegurança, conforto e precisão durante o procedimento. A técnica ajuda a evitar cortes, reduz desconfortos e proporciona um acabamento delicado e profissional.</p>
       </article>
 
       <article class="feature-card">
         <i class="fa-solid fa-heart"></i>
-        <h3>Design personalizado</h3>
-        <p>Modelos delicados, modernos e adaptados ao estilo de cada cliente.</p>
+        <h3>Atendimento Personalizado</h3>
+        <p>Atendimento com atenção, carinho e foco no conforto da cliente, criando modelos delicados, modernos e adaptados ao estilo de cada pessoa.</p>
       </article>
     </div>
   </section>
@@ -806,8 +807,8 @@
     <div class="features">
       <article class="feature-card">
         <i class="fa-solid fa-hand-sparkles"></i>
-        <h3>Cutilagem Russa</h3>
-        <p>É uma técnica de limpeza e acabamento mais preciso na região das cutículas. Ela ajuda a deixar o contorno das unhas mais alinhado, delicado e com aparência mais profissional.</p>
+        <h3>Cutilagem com Brocas / Hardware</h3>
+        <p>É uma técnica de limpeza e acabamento preciso na região das cutículas. A técnica é realizada sem o uso de alicate ou tesoura, utilizando exclusivamente brocas. Ela ajuda a deixar o contorno das unhas alinhado, delicado e com aparência profissional.</p>
       </article>
 
       <article class="feature-card">
@@ -856,33 +857,98 @@
   </section>
 
   <section id="servico" aria-labelledby="servico-title">
-    <h2 class="section-title" id="servico-title">Serviço principal</h2>
+    <h2 class="section-title" id="servico-title">Atendimento</h2>
     <p class="section-description">
-      Valor inicial para atendimento com acabamento profissional. Para modelos mais detalhados, consulte pelo WhatsApp.
+      Os valores podem variar conforme o procedimento, tamanho, manutenção e detalhes escolhidos. Para saber o valor exato, chame no WhatsApp e envie sua referência.
     </p>
 
     <div class="price-box">
-      <h3>Cutilagem Russa + Nail Design</h3>
+      <h3>Atendimento Personalizado</h3>
 
-      <div class="price">R$ 65,00</div>
+      <div class="price">R$ 65</div>
 
       <p>
-        Alongamentos e esmaltações com acabamento sofisticado,
-        delicadeza e muito cuidado em cada atendimento.
+        Cada unha é feita com cuidado, técnica e atenção aos detalhes para entregar um resultado bonito, confortável e duradouro.
       </p>
 
       <ul class="service-list">
-        <li><i class="fa-solid fa-check"></i> Cutilagem russa com acabamento delicado</li>
+        <li><i class="fa-solid fa-check"></i> Cutilagem russa com brocas</li>
         <li><i class="fa-solid fa-check"></i> Alongamento no molde F1</li>
         <li><i class="fa-solid fa-check"></i> Blindagem para mais resistência</li>
         <li><i class="fa-solid fa-check"></i> Esmaltação em gel com brilho e durabilidade</li>
         <li><i class="fa-solid fa-check"></i> Atendimento somente com horário marcado</li>
       </ul>
 
-      <a class="btn" href="https://wa.me/5513996769757?text=Ol%C3%A1%20Thaci%2C%20quero%20saber%20mais%20sobre%20o%20servi%C3%A7o%20de%20cutilagem%20russa%20e%20nail%20design" target="_blank" rel="noopener noreferrer">
+      <a class="btn" href="https://wa.me/5513996769757?text=Ol%C3%A1%20Thaci%2C%20quero%20saber%20mais%20sobre%20os%20servi%C3%A7os%20e%20valores" target="_blank" rel="noopener noreferrer">
         <i class="fab fa-whatsapp"></i>
-        Chamar no WhatsApp
+        Consultar Valores
       </a>
+    </div>
+  </section>
+
+  <section id="cuidados" aria-labelledby="cuidados-title">
+    <h2 class="section-title" id="cuidados-title">Cuidados com as Unhas</h2>
+    <p class="section-description">
+      Alguns cuidados simples ajudam a manter suas unhas bonitas, resistentes e com acabamento impecável por mais tempo.
+    </p>
+
+    <div class="features">
+      <article class="feature-card">
+        <i class="fa-solid fa-droplet"></i>
+        <h3>Hidrate as cutículas</h3>
+        <p>Use óleo ou hidratante específico para manter a região saudável e com aparência bonita.</p>
+      </article>
+
+      <article class="feature-card">
+        <i class="fa-solid fa-hand"></i>
+        <h3>Evite usar as unhas como ferramenta</h3>
+        <p>Não abra embalagens, latas ou objetos com as unhas para evitar quebras e descolamentos.</p>
+      </article>
+
+      <article class="feature-card">
+        <i class="fa-solid fa-soap"></i>
+        <h3>Cuidado com produtos fortes</h3>
+        <p>Ao mexer com produtos de limpeza, prefira usar luvas para proteger o brilho e a durabilidade.</p>
+      </article>
+
+      <article class="feature-card">
+        <i class="fa-solid fa-calendar-days"></i>
+        <h3>Faça manutenção no prazo</h3>
+        <p>A manutenção ajuda a preservar a estrutura, a beleza e a segurança das unhas.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="duvidas" aria-labelledby="duvidas-title">
+    <h2 class="section-title" id="duvidas-title">Dúvidas Frequentes</h2>
+    <p class="section-description">
+      Respostas rápidas para as principais dúvidas antes de agendar seu horário.
+    </p>
+
+    <div class="features">
+      <article class="feature-card">
+        <i class="fa-solid fa-circle-question"></i>
+        <h3>A cutilagem dói?</h3>
+        <p>A cutilagem com brocas é feita com cuidado, precisão e foco no conforto da cliente. O procedimento diminui bastante as possibilidades de desconforto, reduz as chances de cortes, sangramentos e agressões na região da cutícula, além de ajudar a evitar aquelas pelinhas repicadas que acabam incomodando posteriormente.</p>
+      </article>
+
+      <article class="feature-card">
+        <i class="fa-solid fa-clock"></i>
+        <h3>Precisa marcar horário?</h3>
+        <p>Sim. O atendimento é realizado somente com horário marcado para garantir organização e qualidade.</p>
+      </article>
+
+      <article class="feature-card">
+        <i class="fa-solid fa-shield-heart"></i>
+        <h3>Blindagem fortalece?</h3>
+        <p>A blindagem cria uma camada de proteção que ajuda a dar mais resistência às unhas naturais.</p>
+      </article>
+
+      <article class="feature-card">
+        <i class="fa-solid fa-camera"></i>
+        <h3>Posso enviar referência?</h3>
+        <p>Sim. Você pode enviar uma foto pelo WhatsApp para consultar possibilidades, valores e detalhes.</p>
+      </article>
     </div>
   </section>
 
@@ -890,10 +956,13 @@
     <h2 class="section-title" id="sobre-title">Sobre Mim</h2>
 
     <div class="about">
-      Sou apaixonada pelo universo da beleza e trabalho sempre buscando evoluir
-      para entregar unhas lindas, modernas e duradouras.
-      Cada atendimento é feito com atenção, carinho e foco total na qualidade,
-      para que cada cliente saia se sentindo ainda mais bonita e confiante 💖
+      Desde criança eu sempre gostei do universo das unhas, de pintar, testar cores de esmaltes, fazer decorações e criar nail arts. Sempre foi algo que me chamou atenção e que eu gostava de fazer.
+      <br><br>
+      Porém, minhas unhas naturais nunca conseguiam crescer da forma que eu queria. Além disso, as unhas postiças tradicionais acabavam soltando com facilidade, então eu precisava sair com cola na bolsa para ficar recolocando as unhas quando soltavam.
+      <br><br>
+      Quando conheci o alongamento no molde F1, encontrei uma alternativa prática, bonita e resistente para manter minhas unhas sempre longas, elegantes e bem cuidadas. A técnica me permitiu alcançar um resultado natural e confortável no dia a dia.
+      <br><br>
+      Hoje trabalho com alongamento no molde F1 e cutilagem realizada exclusivamente com brocas, sem o uso de alicate ou tesoura durante o procedimento. Meu objetivo é entregar unhas bonitas, delicadas, alinhadas e um atendimento confortável para cada cliente 💖
     </div>
   </section>
 
@@ -949,7 +1018,7 @@
   </section>
 
   <footer>
-    © 2026 • developer by: contato.alexazevedo@outlook.com<br><br>
+    © 2026 • Thaci Nail Designer ✨ <br><br>
     Cutilagem Russa e Nail Design em Fazenda Rio Grande, Paraná <br>
     Desenvolvido para destacar sua beleza com delicadeza e cuidado.
   </footer>
