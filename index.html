@@ -326,8 +326,8 @@
     .gallery{
       display:grid;
       grid-template-columns:repeat(3, 1fr);
-      grid-template-rows:repeat(2, 330px);
-      gap:22px;
+      grid-template-rows:repeat(2, 290px);
+      gap:18px;
     }
 
     .gallery-item:nth-child(1),
@@ -343,7 +343,7 @@
 
     .gallery-item{
       overflow:hidden;
-      border-radius:25px;
+      border-radius:20px;
       border:2px solid rgba(255,255,255,0.08);
       box-shadow:0 10px 30px rgba(0,0,0,0.35);
       background:rgba(255,255,255,0.05);
@@ -680,11 +680,11 @@
       .gallery{
         grid-template-columns:repeat(2, 1fr);
         grid-template-rows:auto;
-        gap:14px;
+        gap:12px;
       }
 
       .gallery-item{
-        height:220px;
+        height:180px;
         border-radius:18px;
       }
 
@@ -717,7 +717,7 @@
       }
 
       .gallery-item{
-        height:260px;
+        height:220px;
       }
 
       .whatsapp-float{
@@ -725,6 +725,57 @@
         bottom:16px;
         width:54px;
         height:54px;
+      }
+    }
+  
+    .video-gallery{
+      margin-top:35px;
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(230px, 1fr));
+      gap:18px;
+    }
+
+    .video-card{
+      overflow:hidden;
+      border-radius:20px;
+      border:2px solid rgba(255,255,255,0.08);
+      background:rgba(255,255,255,0.05);
+      box-shadow:0 10px 30px rgba(0,0,0,0.35);
+    }
+
+    .video-card video{
+      width:100%;
+      height:320px;
+      object-fit:cover;
+      display:block;
+      background:#000;
+    }
+
+    .video-card p{
+      padding:14px 16px;
+      color:#d9d9d9;
+      text-align:center;
+      font-size:0.95rem;
+    }
+
+    @media(max-width:760px){
+      .video-gallery{
+        grid-template-columns:repeat(2, 1fr);
+        gap:12px;
+      }
+
+      .video-card video{
+        height:230px;
+      }
+    }
+
+    @media(max-width:420px){
+      .video-gallery{
+        grid-template-columns:1fr;
+      }
+
+      .video-card video{
+        height:300px;
       }
     }
   </style>
@@ -852,6 +903,26 @@
       </div>
       <div class="gallery-item">
         <img src="20260424_195849.jpg" alt="Unha stiletto longa branco leitoso com ponto de luz" loading="lazy">
+      </div>
+    </div>
+
+    </div>
+  </section>
+
+  <section id="demonstracao" aria-labelledby="demonstracao-title">
+    <h2 class="section-title" id="demonstracao-title">Demonstração da Cutilagem Hardware</h2>
+
+    <p class="section-description">
+      Veja um pouco do procedimento e do acabamento da cutilagem realizada exclusivamente com brocas.
+    </p>
+
+    <div class="video-gallery" style="max-width:420px; margin:0 auto;">
+      <div class="video-card">
+        <video controls preload="metadata" poster="Logo.png">
+          <source src="Design sem nome.mp4" type="video/mp4">
+          
+        </video>
+        <p>Demonstração da técnica</p>
       </div>
     </div>
   </section>
